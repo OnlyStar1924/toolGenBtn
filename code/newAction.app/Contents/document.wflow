@@ -1,0 +1,2091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>444.42</string>
+	<key>AMApplicationVersion</key>
+	<string>2.9</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- Click “Adobe Photoshop 2021” in the Dock.	delay 4	set timeoutSeconds to 2.0	set uiScript to "click UI Element \"Adobe Photoshop 2021\" of list 1 of application process \"Dock\""	my doWithTimeout(uiScript, timeoutSeconds)	return inputend runon doWithTimeout(uiScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; uiScript &amp; "end tell"			exit repeat		on error errorMessage			if ((current date) &gt; endDate) then				error "Can not " &amp; uiScript			end if		end try	end repeatend doWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>1968941A-20E7-4C91-A567-F67F713E6891</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>0199693E-09C8-458F-A509-1FF477BC4102</string>
+				<key>UUID</key>
+				<string>4CDC46DB-3BDA-493A-84D9-B5F478F38D47</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>301.500000:111.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- Click the “Image” menu.	delay 0	set timeoutSeconds to 2.0	set uiScript to "click menu bar item \"Image\" of menu bar 1 of application process \"Photoshop\""	my doWithTimeout(uiScript, timeoutSeconds)	return inputend runon doWithTimeout(uiScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; uiScript &amp; "end tell"			exit repeat		on error errorMessage			if ((current date) &gt; endDate) then				error "Can not " &amp; uiScript			end if		end try	end repeatend doWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>2D69E9AA-BEEC-4B40-AF23-91343719AE28</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>0501E817-E3B9-4DCF-98B6-53DFC6648814</string>
+				<key>UUID</key>
+				<string>A7DFCD30-09AD-41F3-A7AB-474029B810C7</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>301.500000:152.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- Variables	delay 0	set timeoutSeconds to 2.0	set uiScript to "click menu item \"Variables\" of menu 1 of menu bar item \"Image\" of menu bar 1 of application process \"Photoshop\""	my doWithTimeout(uiScript, timeoutSeconds)	return inputend runon doWithTimeout(uiScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; uiScript &amp; "end tell"			exit repeat		on error errorMessage			if ((current date) &gt; endDate) then				error "Can not " &amp; uiScript			end if		end try	end repeatend doWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>9B5005D3-846A-4155-9FC3-3361B97919BE</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>0717E364-45E0-4CAC-BB05-D7A63315E818</string>
+				<key>UUID</key>
+				<string>F4734E06-F174-43A8-BC35-36CAA894B26E</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>301.500000:193.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- Data Sets...	delay 0	set timeoutSeconds to 2.0	set uiScript to "click menu item \"Data Sets...\" of menu 1 of menu item \"Variables\" of menu 1 of menu bar item \"Image\" of menu bar 1 of application process \"Photoshop\""	my doWithTimeout(uiScript, timeoutSeconds)	return inputend runon doWithTimeout(uiScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; uiScript &amp; "end tell"			exit repeat		on error errorMessage			if ((current date) &gt; endDate) then				error "Can not " &amp; uiScript			end if		end try	end repeatend doWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>7AECCB1D-79E6-4530-8198-AC79A95F5C82</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>A92382A8-E2EC-43DC-8EB6-BDAC48362C81</string>
+				<key>UUID</key>
+				<string>BB0FEAAD-1C0E-4486-8D8E-C5F1AE02AE29</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>301.500000:234.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- Click the “Import...” button.	delay 0	set timeoutSeconds to 2.0	set uiScript to "click UI Element \"Import...\" of window \"Variables\" of application process \"Photoshop\""	my doWithTimeout(uiScript, timeoutSeconds)	return inputend runon doWithTimeout(uiScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; uiScript &amp; "end tell"			exit repeat		on error errorMessage			if ((current date) &gt; endDate) then				error "Can not " &amp; uiScript			end if		end try	end repeatend doWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>BC197D41-3C4A-431E-99E8-8E1AF08885A3</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>CC0986CA-4A16-46D9-884E-7217DECEEF9F</string>
+				<key>UUID</key>
+				<string>F72EF608-C968-421E-A556-3FE1532EC152</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>301.500000:275.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- Click the “OK” button.	delay 0	set timeoutSeconds to 2.0	set uiScript to "click UI Element \"OK\" of window \"Import Data Set\" of application process \"Photoshop\""	my doWithTimeout(uiScript, timeoutSeconds)	return inputend runon doWithTimeout(uiScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; uiScript &amp; "end tell"			exit repeat		on error errorMessage			if ((current date) &gt; endDate) then				error "Can not " &amp; uiScript			end if		end try	end repeatend doWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>B83324B7-8A06-4013-9664-7F15335F216D</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>2FCBF4B1-3857-4085-9082-B984F35D2200</string>
+				<key>UUID</key>
+				<string>FA6C6622-6474-4273-AFB4-81D1AFAA9778</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>301.500000:316.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- Click the “OK” button.	delay 0	set timeoutSeconds to 2.0	set uiScript to "click UI Element \"OK\" of window \"Variables\" of application process \"Photoshop\""	my doWithTimeout(uiScript, timeoutSeconds)	return inputend runon doWithTimeout(uiScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; uiScript &amp; "end tell"			exit repeat		on error errorMessage			if ((current date) &gt; endDate) then				error "Can not " &amp; uiScript			end if		end try	end repeatend doWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>48C01155-5F77-4DCA-AF25-30890A7B01ED</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>AD73B7C6-1572-4FDE-8DDB-322B368B2736</string>
+				<key>UUID</key>
+				<string>5C1878E3-284C-4048-8B7B-BD7ABB6E1B1D</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>301.500000:357.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- Click the “File” menu.	delay 0	set timeoutSeconds to 2.0	set uiScript to "click menu bar item \"File\" of menu bar 1 of application process \"Photoshop\""	my doWithTimeout(uiScript, timeoutSeconds)	return inputend runon doWithTimeout(uiScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; uiScript &amp; "end tell"			exit repeat		on error errorMessage			if ((current date) &gt; endDate) then				error "Can not " &amp; uiScript			end if		end try	end repeatend doWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>A47A8871-1C70-4014-862A-9590F730C15D</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>E5211FBD-3172-47B5-A5DB-7F896D174557</string>
+				<key>UUID</key>
+				<string>4C36971F-8255-4911-88ED-ADBAE9E676DB</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>301.500000:398.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- Export	delay 0	set timeoutSeconds to 2.0	set uiScript to "click menu item \"Export\" of menu 1 of menu bar item \"File\" of menu bar 1 of application process \"Photoshop\""	my doWithTimeout(uiScript, timeoutSeconds)	return inputend runon doWithTimeout(uiScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; uiScript &amp; "end tell"			exit repeat		on error errorMessage			if ((current date) &gt; endDate) then				error "Can not " &amp; uiScript			end if		end try	end repeatend doWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>8AA6F1E8-F3A7-4964-9B8C-A4E50F5442F1</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>2BE02027-0BA7-49D8-9221-288A89B08874</string>
+				<key>UUID</key>
+				<string>1C19AEF8-9101-4915-AC63-6646025DB62A</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>301.500000:439.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- Data Sets as Files...	delay 0	set timeoutSeconds to 2.0	set uiScript to "click menu item \"Data Sets as Files...\" of menu 1 of menu item \"Export\" of menu 1 of menu bar item \"File\" of menu bar 1 of application process \"Photoshop\""	my doWithTimeout(uiScript, timeoutSeconds)	return inputend runon doWithTimeout(uiScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; uiScript &amp; "end tell"			exit repeat		on error errorMessage			if ((current date) &gt; endDate) then				error "Can not " &amp; uiScript			end if		end try	end repeatend doWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>FDAB35F3-7ED4-4B0D-BBE5-9F7F4BE35EDD</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>5D6BDDAB-C4AE-40A7-8DF8-7C4F0381D4E1</string>
+				<key>UUID</key>
+				<string>26561894-3922-4883-8D17-23CB315E44E3</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>301.500000:480.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- Click the “OK” button.	delay 0	set timeoutSeconds to 2.0	set uiScript to "click UI Element \"OK\" of window \"Export Data Sets as Files\" of application process \"Photoshop\""	my doWithTimeout(uiScript, timeoutSeconds)	return inputend runon doWithTimeout(uiScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; uiScript &amp; "end tell"			exit repeat		on error errorMessage			if ((current date) &gt; endDate) then				error "Can not " &amp; uiScript			end if		end try	end repeatend doWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>BD537417-D2EC-44CE-8088-7B8F31DEDC6A</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>6E096C00-6894-48CA-89B7-97D909320EAA</string>
+				<key>UUID</key>
+				<string>A8DBAC92-FBB4-4461-B450-E1820F1E0D6A</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>301.500000:521.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- Click the “File” menu.	delay 15	set timeoutSeconds to 2.0	set uiScript to "click menu bar item \"File\" of menu bar 1 of application process \"Photoshop\""	my doWithTimeout(uiScript, timeoutSeconds)	return inputend runon doWithTimeout(uiScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; uiScript &amp; "end tell"			exit repeat		on error errorMessage			if ((current date) &gt; endDate) then				error "Can not " &amp; uiScript			end if		end try	end repeatend doWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>1DDB1F82-3D66-4C78-B119-2D8A0EC32C3F</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>698CABF0-EFA6-4875-ACCC-EB23812DD04E</string>
+				<key>UUID</key>
+				<string>5F68F44F-44D5-43EF-B46B-9D529E5E8E6B</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>301.500000:562.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- Automate	delay 0	set timeoutSeconds to 2.0	set uiScript to "click menu item \"Automate\" of menu 1 of menu bar item \"File\" of menu bar 1 of application process \"Photoshop\""	my doWithTimeout(uiScript, timeoutSeconds)	return inputend runon doWithTimeout(uiScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; uiScript &amp; "end tell"			exit repeat		on error errorMessage			if ((current date) &gt; endDate) then				error "Can not " &amp; uiScript			end if		end try	end repeatend doWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>0DBBE26C-DE27-4F5B-87C6-DDE64E5ADA01</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>2AB275F2-A10B-477E-9C1E-3362F4FEE906</string>
+				<key>UUID</key>
+				<string>F7BD1380-0589-4972-89A2-C290F4706BC3</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>301.500000:603.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- Batch...	delay 0	set timeoutSeconds to 2.0	set uiScript to "click menu item \"Batch...\" of menu 1 of menu item \"Automate\" of menu 1 of menu bar item \"File\" of menu bar 1 of application process \"Photoshop\""	my doWithTimeout(uiScript, timeoutSeconds)	return inputend runon doWithTimeout(uiScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; uiScript &amp; "end tell"			exit repeat		on error errorMessage			if ((current date) &gt; endDate) then				error "Can not " &amp; uiScript			end if		end try	end repeatend doWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>565278E3-F33D-4D02-BD0A-1C947BDF8693</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>3493F821-8CAA-4C9C-AAC1-28397A9D8A80</string>
+				<key>UUID</key>
+				<string>5D456812-1B36-4AC3-B70E-AB8BB6F5AC61</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>301.500000:644.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- Make a selection from the popupbutton.	delay 0	set timeoutSeconds to 2.0	set uiScript to "click pop up button 2 of window \"Batch\" of application process \"Photoshop\""	my doWithTimeout(uiScript, timeoutSeconds)	return inputend runon doWithTimeout(uiScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; uiScript &amp; "end tell"			exit repeat		on error errorMessage			if ((current date) &gt; endDate) then				error "Can not " &amp; uiScript			end if		end try	end repeatend doWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>9B0B510B-FBF9-4C9C-A3A3-A369F2160569</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>D0E787EA-74A1-4188-B0DA-A193F207474C</string>
+				<key>UUID</key>
+				<string>23CBA731-65CE-4FF3-82DF-0E64C25530E6</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>301.500000:685.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- exportPNG4TGB	delay 0	set timeoutSeconds to 2.0	set uiScript to "click menu item \"exportPNG4TGB\" of menu 1 of pop up button 2 of window \"Batch\" of application process \"Photoshop\""	my doWithTimeout(uiScript, timeoutSeconds)	return inputend runon doWithTimeout(uiScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; uiScript &amp; "end tell"			exit repeat		on error errorMessage			if ((current date) &gt; endDate) then				error "Can not " &amp; uiScript			end if		end try	end repeatend doWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>4C81CFC3-CA76-4265-B678-430EF6C1DBE2</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>F404B139-3DED-4B4A-8693-238AF11C6EF6</string>
+				<key>UUID</key>
+				<string>48200B24-E80A-499F-BFC2-82DDE4FEEF9C</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>301.500000:726.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- Click the “OK” button.	delay 0	set timeoutSeconds to 2.0	set uiScript to "click UI Element \"OK\" of window \"Batch\" of application process \"Photoshop\""	my doWithTimeout(uiScript, timeoutSeconds)	return inputend runon doWithTimeout(uiScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; uiScript &amp; "end tell"			exit repeat		on error errorMessage			if ((current date) &gt; endDate) then				error "Can not " &amp; uiScript			end if		end try	end repeatend doWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>160C4E8C-2500-4C65-82D0-1525B81B1C09</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>7B5CCDE3-DC93-4F26-80CF-A9DA74F05D83</string>
+				<key>UUID</key>
+				<string>37340D8F-4104-456B-99EC-E20674BFAB11</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>301.500000:767.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- Press ⌘Q	delay 20	set timeoutSeconds to 2.000000	set uiScript to "keystroke \"q\" using command down"	my doWithTimeout( uiScript, timeoutSeconds )	return inputend runon doWithTimeout(uiScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; uiScript &amp; "end tell"			exit repeat		on error errorMessage			if ((current date) &gt; endDate) then				error "Can not " &amp; uiScript			end if		end try	end repeatend doWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>85EC7415-E930-490D-B15E-E05CEE0ED0D9</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>1AC082AE-0B7D-4200-934D-B98D64F29927</string>
+				<key>UUID</key>
+				<string>25C589AD-4550-4017-AD91-808FC84C16A0</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>301.500000:1012.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- Click the “Don’t Save” button.	delay 000000	set timeoutSeconds to 2.000000	set uiScript to "click UI Element 5 of window \"Adobe Photoshop\" of application process \"Photoshop\""	my doWithTimeout( uiScript, timeoutSeconds )	return inputend runon doWithTimeout(uiScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; uiScript &amp; "end tell"			exit repeat		on error errorMessage			if ((current date) &gt; endDate) then				error "Can not " &amp; uiScript			end if		end try	end repeatend doWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>DE4684EC-13D6-4213-82E0-56C6A497176A</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>628F8911-0750-4AB4-A35B-7DB1B6D60006</string>
+				<key>UUID</key>
+				<string>3BA54547-8EBF-4D9F-AB95-02B3342F7EB5</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>301.500000:1257.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict>
+		<key>0719BA51-C743-4117-A1DD-46E15E2616B9</key>
+		<dict>
+			<key>from</key>
+			<string>A7DFCD30-09AD-41F3-A7AB-474029B810C7 - A7DFCD30-09AD-41F3-A7AB-474029B810C7</string>
+			<key>to</key>
+			<string>F4734E06-F174-43A8-BC35-36CAA894B26E - F4734E06-F174-43A8-BC35-36CAA894B26E</string>
+		</dict>
+		<key>0AAD94CD-1419-41B4-A0E3-CA5A97CAEC27</key>
+		<dict>
+			<key>from</key>
+			<string>23CBA731-65CE-4FF3-82DF-0E64C25530E6 - 23CBA731-65CE-4FF3-82DF-0E64C25530E6</string>
+			<key>to</key>
+			<string>48200B24-E80A-499F-BFC2-82DDE4FEEF9C - 48200B24-E80A-499F-BFC2-82DDE4FEEF9C</string>
+		</dict>
+		<key>0BCEF3CC-6CD4-49FE-97D7-4256C30D27C6</key>
+		<dict>
+			<key>from</key>
+			<string>37340D8F-4104-456B-99EC-E20674BFAB11 - 37340D8F-4104-456B-99EC-E20674BFAB11</string>
+			<key>to</key>
+			<string>25C589AD-4550-4017-AD91-808FC84C16A0 - 25C589AD-4550-4017-AD91-808FC84C16A0</string>
+		</dict>
+		<key>3499A939-D68A-4B6D-888B-4BAB3B81B467</key>
+		<dict>
+			<key>from</key>
+			<string>FA6C6622-6474-4273-AFB4-81D1AFAA9778 - FA6C6622-6474-4273-AFB4-81D1AFAA9778</string>
+			<key>to</key>
+			<string>5C1878E3-284C-4048-8B7B-BD7ABB6E1B1D - 5C1878E3-284C-4048-8B7B-BD7ABB6E1B1D</string>
+		</dict>
+		<key>496DB985-E1BA-496C-8CF0-363775072915</key>
+		<dict>
+			<key>from</key>
+			<string>4C36971F-8255-4911-88ED-ADBAE9E676DB - 4C36971F-8255-4911-88ED-ADBAE9E676DB</string>
+			<key>to</key>
+			<string>1C19AEF8-9101-4915-AC63-6646025DB62A - 1C19AEF8-9101-4915-AC63-6646025DB62A</string>
+		</dict>
+		<key>562FD093-1D27-4938-9440-05DEB9E4D538</key>
+		<dict>
+			<key>from</key>
+			<string>5F68F44F-44D5-43EF-B46B-9D529E5E8E6B - 5F68F44F-44D5-43EF-B46B-9D529E5E8E6B</string>
+			<key>to</key>
+			<string>F7BD1380-0589-4972-89A2-C290F4706BC3 - F7BD1380-0589-4972-89A2-C290F4706BC3</string>
+		</dict>
+		<key>5E5047C7-598F-45D2-9359-85292CC7C551</key>
+		<dict>
+			<key>from</key>
+			<string>F72EF608-C968-421E-A556-3FE1532EC152 - F72EF608-C968-421E-A556-3FE1532EC152</string>
+			<key>to</key>
+			<string>FA6C6622-6474-4273-AFB4-81D1AFAA9778 - FA6C6622-6474-4273-AFB4-81D1AFAA9778</string>
+		</dict>
+		<key>72878257-BA62-4105-8148-968F4E9ED2DF</key>
+		<dict>
+			<key>from</key>
+			<string>5D456812-1B36-4AC3-B70E-AB8BB6F5AC61 - 5D456812-1B36-4AC3-B70E-AB8BB6F5AC61</string>
+			<key>to</key>
+			<string>23CBA731-65CE-4FF3-82DF-0E64C25530E6 - 23CBA731-65CE-4FF3-82DF-0E64C25530E6</string>
+		</dict>
+		<key>73A6E18D-D198-46CB-B253-26E8EABD507E</key>
+		<dict>
+			<key>from</key>
+			<string>F7BD1380-0589-4972-89A2-C290F4706BC3 - F7BD1380-0589-4972-89A2-C290F4706BC3</string>
+			<key>to</key>
+			<string>5D456812-1B36-4AC3-B70E-AB8BB6F5AC61 - 5D456812-1B36-4AC3-B70E-AB8BB6F5AC61</string>
+		</dict>
+		<key>78B989AB-5BD1-48AE-B4DD-79A771E64B8F</key>
+		<dict>
+			<key>from</key>
+			<string>25C589AD-4550-4017-AD91-808FC84C16A0 - 25C589AD-4550-4017-AD91-808FC84C16A0</string>
+			<key>to</key>
+			<string>3BA54547-8EBF-4D9F-AB95-02B3342F7EB5 - 3BA54547-8EBF-4D9F-AB95-02B3342F7EB5</string>
+		</dict>
+		<key>7C6D7966-C2F1-4C4C-A87B-91667BC5BEEF</key>
+		<dict>
+			<key>from</key>
+			<string>A8DBAC92-FBB4-4461-B450-E1820F1E0D6A - A8DBAC92-FBB4-4461-B450-E1820F1E0D6A</string>
+			<key>to</key>
+			<string>5F68F44F-44D5-43EF-B46B-9D529E5E8E6B - 5F68F44F-44D5-43EF-B46B-9D529E5E8E6B</string>
+		</dict>
+		<key>7EDD3342-ED6C-4C7F-BE7E-4847737E432C</key>
+		<dict>
+			<key>from</key>
+			<string>48200B24-E80A-499F-BFC2-82DDE4FEEF9C - 48200B24-E80A-499F-BFC2-82DDE4FEEF9C</string>
+			<key>to</key>
+			<string>37340D8F-4104-456B-99EC-E20674BFAB11 - 37340D8F-4104-456B-99EC-E20674BFAB11</string>
+		</dict>
+		<key>900A1880-F530-40B5-8DBE-33DD2A1D1F76</key>
+		<dict>
+			<key>from</key>
+			<string>5C1878E3-284C-4048-8B7B-BD7ABB6E1B1D - 5C1878E3-284C-4048-8B7B-BD7ABB6E1B1D</string>
+			<key>to</key>
+			<string>4C36971F-8255-4911-88ED-ADBAE9E676DB - 4C36971F-8255-4911-88ED-ADBAE9E676DB</string>
+		</dict>
+		<key>962C8475-13F5-4F97-B4FC-8F79B3E39179</key>
+		<dict>
+			<key>from</key>
+			<string>4CDC46DB-3BDA-493A-84D9-B5F478F38D47 - 4CDC46DB-3BDA-493A-84D9-B5F478F38D47</string>
+			<key>to</key>
+			<string>A7DFCD30-09AD-41F3-A7AB-474029B810C7 - A7DFCD30-09AD-41F3-A7AB-474029B810C7</string>
+		</dict>
+		<key>98BA5EC5-16FF-4A99-8E11-7A18A0228156</key>
+		<dict>
+			<key>from</key>
+			<string>1C19AEF8-9101-4915-AC63-6646025DB62A - 1C19AEF8-9101-4915-AC63-6646025DB62A</string>
+			<key>to</key>
+			<string>26561894-3922-4883-8D17-23CB315E44E3 - 26561894-3922-4883-8D17-23CB315E44E3</string>
+		</dict>
+		<key>C5C30554-E30E-4E1D-AB93-B49B42147A61</key>
+		<dict>
+			<key>from</key>
+			<string>26561894-3922-4883-8D17-23CB315E44E3 - 26561894-3922-4883-8D17-23CB315E44E3</string>
+			<key>to</key>
+			<string>A8DBAC92-FBB4-4461-B450-E1820F1E0D6A - A8DBAC92-FBB4-4461-B450-E1820F1E0D6A</string>
+		</dict>
+		<key>EA3CFC90-DC3B-4C4B-973D-FB49694D29CC</key>
+		<dict>
+			<key>from</key>
+			<string>BB0FEAAD-1C0E-4486-8D8E-C5F1AE02AE29 - BB0FEAAD-1C0E-4486-8D8E-C5F1AE02AE29</string>
+			<key>to</key>
+			<string>F72EF608-C968-421E-A556-3FE1532EC152 - F72EF608-C968-421E-A556-3FE1532EC152</string>
+		</dict>
+		<key>F4D4A49E-568A-4E6D-A5AD-0EAD8FDB0B7F</key>
+		<dict>
+			<key>from</key>
+			<string>F4734E06-F174-43A8-BC35-36CAA894B26E - F4734E06-F174-43A8-BC35-36CAA894B26E</string>
+			<key>to</key>
+			<string>BB0FEAAD-1C0E-4486-8D8E-C5F1AE02AE29 - BB0FEAAD-1C0E-4486-8D8E-C5F1AE02AE29</string>
+		</dict>
+	</dict>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.application</string>
+	</dict>
+</dict>
+</plist>
