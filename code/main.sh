@@ -1,17 +1,19 @@
 #!/bin/sh
 
-# cd /Users/defold/Projects/ToolGenBtn/code
+cd /Users/defold/Projects/ToolGenBtn/code
+open speekStart.app
+
 rm -f ../temp/psd/*
 rm -f ../temp/png/*
 
-python JSON2CSV.py
+python3 JSON2CSV.py
 
 open ../input/button.psd
 open newAction.app
-wc -l ../temp/inputText.csv | awk '{ temp = $1 - 10; while (temp > 0) { system("sleep 1"); temp-- } }' 
+wc -l ../temp/inputText.csv | awk '{ temp = $1 ; while (temp > 0) { system("sleep 1"); temp-- } }' 
 
-python combinePNG.py
+python3 combinePNG.py
 
 
 
-echo "done"
+open speekEnd.app

@@ -14,7 +14,7 @@ for line in data:
 
 
 
-number = 4
+number = 1
 
 while number < len(jsonlist): 
     newlist.append(jsonlist[number])
