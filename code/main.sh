@@ -36,7 +36,7 @@ then
     git push origin server
 
     sleep 10
-
+    cd /Users/defold/Projects/ToolGenBtn/code
     open speekEnd.app
 
 elif [ "$cmd" == "up to date" ]
