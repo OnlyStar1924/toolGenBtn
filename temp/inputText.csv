@@ -1,49 +1,49 @@
 pack,level,name,color
-1,1,Getting Started,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_blue.png
-1,2,Double the Fun,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_blue.png
-1,3,Obstacle,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_blue.png
-1,4,More Obstacles,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_blue.png
-1,5,Get Ready,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_blue.png
-2,1,Short 'n Sweet,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_tim.png
-2,2,Triple the fun,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_tim.png
-2,3,It's Getting Cramped,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_tim.png
-2,4,Catch It or Lose It,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_tim.png
-2,5,Slow down!,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_tim.png
-3,1,Inverted,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_cyan.png
-3,2,Take Control,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_cyan.png
-3,3,Mixed Up ,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_cyan.png
-3,4,Steady Hand,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_cyan.png
-3,5,Going All Blue,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_cyan.png
-4,1,Get a Hold of It,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
-4,2,Waterfall,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
-4,3,Three circles,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
-4,4,aMaze,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
-4,5,Kick into Gear,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
-5,1,Two Circles,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_red.png
-5,2,Stay Idle,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_red.png
-5,3,Bounce,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_red.png
-5,4,Let It Slide,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_red.png
-5,5,Don't Give Up,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_red.png
-6,1,Down It Goes,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
-6,2,Bumpy Road,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
-6,3,Slow AF,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
-6,4,Clockwise,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
-6,5,Counter-clockwise,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
-7,1,On the Verge,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_tim.png
-7,2,Remember the clocks?,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_tim.png
-7,3,Slides,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_tim.png
-7,4,Make It Bounce,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_tim.png
-7,5,Slow 'n Steady,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_tim.png
-8,1,Make a Detour,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
-8,2,Catch 'n Shoot ,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
-8,3,Take a Break,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
-8,4,Don't Touch It ,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
-8,5,Keep Calm and...,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
-9,1,Odd One Out,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
-9,2,Steady AF,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
-9,3,Catch Like a Pro,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
-9,4,Think Outside the Box,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
-9,5,Pinball Time,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
+1,1,Getting Started,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_yellow.png
+1,2,Double the Fun,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_yellow.png
+1,3,Obstacle,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_yellow.png
+1,4,More Obstacles,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_yellow.png
+1,5,Get Ready kien,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_yellow.png
+2,1,Short 'n Sweet,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
+2,2,Triple the fun,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
+2,3,It's Getting Cramped,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
+2,4,Catch It or Lose It,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
+2,5,Slow down!,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
+3,1,Inverted,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
+3,2,Take Control,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
+3,3,Mixed Up ,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
+3,4,Steady Hand,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
+3,5,Going All Blue,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
+4,1,Get a Hold of It,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_cyan.png
+4,2,Waterfall,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_cyan.png
+4,3,Three circles,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_cyan.png
+4,4,aMaze,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_cyan.png
+4,5,Kick into Gear,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_cyan.png
+5,1,Two Circles,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_tim.png
+5,2,Stay Idle,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_tim.png
+5,3,Bounce,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_tim.png
+5,4,Let It Slide,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_tim.png
+5,5,Don't Give Up,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_tim.png
+6,1,Down It Goes,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_cyan.png
+6,2,Bumpy Road,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_cyan.png
+6,3,Slow AF,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_cyan.png
+6,4,Clockwise,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_cyan.png
+6,5,Counter-clockwise,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_cyan.png
+7,1,On the Verge,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
+7,2,Remember the clocks?,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
+7,3,Slides,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
+7,4,Make It Bounce,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
+7,5,Slow 'n Steady,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
+8,1,Make a Detour,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_blue.png
+8,2,Catch 'n Shoot ,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_blue.png
+8,3,Take a Break,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_blue.png
+8,4,Don't Touch It ,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_blue.png
+8,5,Keep Calm and...,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_blue.png
+9,1,Odd One Out,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_yellow.png
+9,2,Steady AF,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_yellow.png
+9,3,Catch Like a Pro,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_yellow.png
+9,4,Think Outside the Box,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_yellow.png
+9,5,Pinball Time,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_yellow.png
 10,1,Perfectly Balanced as All Things Should Be.,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
 10,2,It's not a Copy!,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
 10,3,Our Boss Made this Level,/Users/defold/Projects/ToolGenBtn/input/image_btn/Ellipse_green.png
