@@ -1,19 +1,50 @@
 #!/bin/sh
 
-cd /Users/defold/Projects/ToolGenBtn/code
-open speekStart.app
+cmd=$(git remote show origin | grep "server")
+cmd=${cmd#*(}
+cmd=${cmd%)*}
 
-rm -f ../temp/psd/*
-rm -f ../temp/png/*
+if [ "$cmd" == "local out of date" ]
+then
+    cd /Users/defold/Projects/ToolGenBtn
+    git pull origin server
+    cd /Users/defold/Projects/ToolGenBtn/code
+    open speekStart.app
 
-python3 JSON2CSV.py
+    rm -f ../temp/psd/*
+    rm -f ../temp/png/*
 
-open ../input/*.psd
-open newAction.app
-wc -l ../temp/inputText.csv | awk '{ temp = $1 ; while (temp > 0) { system("sleep 1"); temp-- } }' 
+    python3 JSON2CSV.py
 
-python3 combinePNG.py
+    open ../input/*.psd
+    open newAction.app
+    wc -l ../temp/inputText.csv | awk '{ temp = $1 ; while (temp > 0) { system("sleep 1"); temp-- } }' 
+
+    python3 combinePNG.py
+
+    open speekEnd.app
+
+elif [ "$cmd" == "up to date" ]
+then
+    echo "nothing to do"
+fi
 
 
 
-open speekEnd.app
+
+
+# cd /Users/defold/Projects/ToolGenBtn/code
+# open speekStart.app
+
+# rm -f ../temp/psd/*
+# rm -f ../temp/png/*
+
+# python3 JSON2CSV.py
+
+# open ../input/*.psd
+# open newAction.app
+# wc -l ../temp/inputText.csv | awk '{ temp = $1 ; while (temp > 0) { system("sleep 1"); temp-- } }' 
+
+# python3 combinePNG.py
+
+# open speekEnd.app
