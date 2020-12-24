@@ -6,13 +6,15 @@ cmd=${cmd%)*}
 
 if [ "$cmd" == "local out of date" ]
 then
+    cd /Users/defold/Projects/ToolGenBtn/code
+    open speekStart.app
     cd /Users/defold/Projects/ToolGenBtn
     git pull origin server
     
     sleep 15 
 
     cd /Users/defold/Projects/ToolGenBtn/code
-    open speekStart.app
+    
 
     rm -f ../temp/psd/*
     rm -f ../temp/png/*
@@ -26,8 +28,9 @@ then
     python3 combinePNG.py
 
     git add \.
-
+    sleep 1
     git commit -m "new commit for `date`"
+    sleep 1
 
     git push origin server
 
