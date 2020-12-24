@@ -8,6 +8,9 @@ if [ "$cmd" == "local out of date" ]
 then
     cd /Users/defold/Projects/ToolGenBtn
     git pull origin server
+    
+    sleep 15 
+    
     cd /Users/defold/Projects/ToolGenBtn/code
     open speekStart.app
 
@@ -21,6 +24,16 @@ then
     wc -l ../temp/inputText.csv | awk '{ temp = $1 ; while (temp > 0) { system("sleep 1"); temp-- } }' 
 
     python3 combinePNG.py
+
+   
+
+    git add .
+
+    git commit -m "new commit for `date`"
+
+    git push origin server
+
+    sleep 10
 
     open speekEnd.app
 
